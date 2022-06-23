@@ -1,15 +1,259 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Timetable</title>
+    <link rel="stylesheet" href="./CSS/TimeTabe.css" />
+    
+  </head>
+  <body>
+    <header>
+        
+        <a class="logout_btn" href="">Logout</a>
+        
+        
+    </header>
+    <h1>Weekly Timetable</h1>
+        <div class="Schedule_table">
+          Năm: <select name="year">
+            <option value="1">2019</option>
+            <option value="2">2020</option>
+            <option value="3">2021</option>
+            <option value="4">2022</option>
+            </select>
+            Tuần: <select> 
+              <option selected="selected" value="1">31/12 To 06/01</option>
+              <option value="2">07/01 To 13/01</option>
+              <option value="3">14/01 To 20/01</option>
+              <option value="4">21/01 To 27/01</option>
+              <option value="5">28/01 To 03/02</option>
+              <option value="6">04/02 To 10/02</option>
+              <option value="7">11/02 To 17/02</option>
+              <option value="8">18/02 To 24/02</option>
+              <option value="9">25/02 To 03/03</option>
+              <option value="10">04/03 To 10/03</option>
+              <option value="11">11/03 To 17/03</option>
+              <option value="12">18/03 To 24/03</option>
+              <option value="13">25/03 To 31/03</option>
+              <option value="14">01/04 To 07/04</option>
+              <option value="15">08/04 To 14/04</option>
+              <option value="16">15/04 To 21/04</option>
+              <option value="17">22/04 To 28/04</option>
+              <option value="18">29/04 To 05/05</option>
+              <option value="19">06/05 To 12/05</option>
+              <option value="20">13/05 To 19/05</option>
+              <option value="21">20/05 To 26/05</option>
+              <option value="22">27/05 To 02/06</option>
+              <option value="23">03/06 To 09/06</option>
+              <option value="24">10/06 To 16/06</option>
+              <option value="25">17/06 To 23/06</option>
+              <option value="26">24/06 To 30/06</option>
+              <option value="27">01/07 To 07/07</option>
+              <option value="28">08/07 To 14/07</option>
+              <option value="29">15/07 To 21/07</option>
+              <option value="30">22/07 To 28/07</option>
+              <option value="31">29/07 To 04/08</option>
+              <option value="32">05/08 To 11/08</option>
+              <option value="33">12/08 To 18/08</option>
+              <option value="34">19/08 To 25/08</option>
+              <option value="35">26/08 To 01/09</option>
+              <option value="36">02/09 To 08/09</option>
+              <option value="37">09/09 To 15/09</option>
+              <option value="38">16/09 To 22/09</option>
+              <option value="39">23/09 To 29/09</option>
+              <option value="40">30/09 To 06/10</option>
+              <option value="41">07/10 To 13/10</option>
+              <option value="42">14/10 To 20/10</option>
+              <option value="43">21/10 To 27/10</option>
+              <option value="44">28/10 To 03/11</option>
+              <option value="45">04/11 To 10/11</option>
+              <option value="46">11/11 To 17/11</option>
+              <option value="47">18/11 To 24/11</option>
+              <option value="48">25/11 To 01/12</option>
+              <option value="49">02/12 To 08/12</option>
+              <option value="50">09/12 To 15/12</option>
+              <option value="51">16/12 To 22/12</option>
+          </select>            
+            <table>
+              <thead>
+                <tr>
+                  <th>Slot</th>
+                  <th>Monday</th>
+                  <th>Tuesday</th>
+                  <th>Wednesday</th>
+                  <th>Thursday</th>
+                  <th>Friday</th>
+                  <th>Saturday</th>
+                  <th>Sunday</th>
+                </tr>
+              </thead>
+              <tbody>
+
+      
+                <tr>
+                  <td>Slot 1</td>
+           
+                  <td>
+                    MAD101 <br />
+                    at DE205 <br />
+                    (attended) <br />
+                </td>
+      
+                  <td>
+                    MAS291 <br />
+                    at DE108 <br />
+                    (attended) <br />
+                  </td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+
+                  <td>-</td>
+                </tr>
+      
+                <tr>
+                  <td>Slot 2</td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+      
+                  <td>
+                    MAD101 <br />
+                    at DE205 <br />
+                    (absent) <br />
+                  </td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+
+                  <td>-</td>
+                </tr>
+      
+                <tr>
+                  <td>Slot 3</td>
+      
+                  <td>-</td>
+      
+                  <td>MAD101 <br />
+                    at DE205 <br />
+                    (Not yet) <br /></td>
+                  <td>-</td>
+      
+                  <td>
+                    PRJ301 <br />
+                    at DE205 <br />
+                    (Not yet) <br />
+                  </td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+
+                  <td>-</td>
+                </tr>
+      
+                <tr>
+                  <td>Slot 4</td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+                  
+                  <td>-</td>
+                </tr>
+      
+                <tr>
+                  <td>Slot 5</td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+
+                  <td>-</td>
+                </tr>
+      
+                <tr>
+                  <td>Slot 6</td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+
+                  <td>-</td>
+                </tr>
+      
+                <tr>
+                  <td>Slot 7</td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+
+                  <td>-</td>
+                </tr>
+      
+                <tr>
+                  <td>Slot 8</td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+      
+                  <td>-</td>
+
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+  </body>
 </html>
